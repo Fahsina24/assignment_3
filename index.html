@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio Home Service</title>
+    <!-- Font Awesome CDN link -->
+    <script
+      src="https://kit.fontawesome.com/5124a7fe28.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind & DaisyUI CDN Link -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Css configuration link -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary_btn_color: "rgb(171, 239, 95)",
+              primary_text: "rgb(33, 33, 33)",
+              secondary_text: "rgb(73, 73, 73)",
+              other_text: "rgb(115, 115, 115)",
+            },
+            fontFamily: {
+              Manrope: "Manrope",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="font-Manrope h-18 w-11/12 my-8 mx-auto border-solid border-yellow-500 border-8"
+  >
+    <!-- header starts here -->
+    <header>
+      <!-- navbar starts here -->
+      <nav class="flex mx auto">
+        <div class="flex justify-start items-center">
+          <p class="bg-primary_btn_color w-fit rounded-full px-2 py-1">
+            <i
+              class="fa-solid fa-arrow-right text-center text-black text-4xl -rotate-45"
+            >
+            </i>
+          </p>
+          <h1 class="text-4xl text-primary_text font-extrabold">Rinterio</h1>
+        </div>
+        <div class="flex items-center mx-auto gap-6 justify-evenly">
+          <p class="text-secondary_text">Home</p>
+          <p class="text-other_text">Services</p>
+          <p class="text-other_text">Portfolio</p>
+          <p class="text-other_text">Blogs</p>
+          <p class="text-other_text">Contact Us</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <i
+            class="fa-solid fa-magnifying-glass bg-white rounded-full p-2 border-solid border-rgb(233, 233, 233) border-2 items-center text-[#737373]"
+          ></i>
+          <i
+            class="fa-solid fa-cart-shopping bg-white rounded-full p-2 border-solid border-rgb(233, 233, 233) border-2 items-center text-[#737373]"
+          ></i>
+          <div>
+            <button
+              class="btn bg-primary_btn_color rounded-full text-primary_text"
+            >
+              Book Consult
+              <p class="bg-black w-fit rounded-full px-2 py-1">
+                <i
+                  class="fa-solid fa-arrow-right text-center text-white text-xl -rotate-45"
+                >
+                </i>
+              </p>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
