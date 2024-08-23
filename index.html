@@ -55,47 +55,71 @@
     class="font-Manrope h-40 w-11/12 my-8 mx-auto border-solid border-yellow-500 border-8"
   >
     <!-- header starts here -->
-    <header>
+    <header class="w-11/12 mx-auto">
       <!-- navbar starts here -->
-      <nav class="flex mx auto h-18 border-blue-600 border solid border-10">
-        <div class="flex justify-start items-center">
-          <p class="bg-primary_btn_color w-fit rounded-full px-2 py-1">
-            <i
-              class="fa-solid fa-arrow-right text-center text-black text-4xl -rotate-45"
+      <nav class="w-full">
+        <div class="navbar h-18 border-blue-600 border solid border-10">
+          <div class="navbar-start gap-1">
+            <p
+              class="bg-primary_btn_color w-fit rounded-full px-2 py-1 items-center"
             >
-            </i>
-          </p>
-          <h1 class="text-4xl text-primary_text font-extrabold">Rinterio</h1>
-        </div>
-        <div class="flex items-center mx-auto gap-6 justify-evenly">
-          <p class="text-secondary_text">Home</p>
-          <p class="text-other_text">Services</p>
-          <p class="text-other_text">Portfolio</p>
-          <p class="text-other_text">Blogs</p>
-          <p class="text-other_text">Contact Us</p>
-        </div>
-        <div class="flex items-center gap-2">
-          <i
-            class="fa-solid fa-magnifying-glass bg-white rounded-full p-2 border-solid border-rgb(233, 233, 233) border-2 items-center text-[#737373]"
-          ></i>
-          <i
-            class="fa-solid fa-cart-shopping bg-white rounded-full p-2 border-solid border-rgb(233, 233, 233) border-2 items-center text-[#737373]"
-          ></i>
-          <div>
-            <button
-              class="btn bg-primary_btn_color rounded-full text-primary_text"
-            >
-              Book Consult
-              <p class="bg-black w-fit rounded-full px-2 py-1">
-                <i
-                  class="fa-solid fa-arrow-right text-center text-white text-xl -rotate-45"
+              <i
+                class="fa-solid fa-arrow-right text-center text-black text-xl -rotate-45"
+              >
+              </i>
+            </p>
+            <h1 class="text-3xl text-primary_text font-extrabold">Rinterio</h1>
+          </div>
+          <div class="navbar-center hidden gap-1 lg:flex">
+            <ul class="menu menu-horizontal px-1 text-m">
+              <li class="text-secondary_text"><a>Home</a></li>
+              <li class="text-other_text"><a>Services</a></li>
+              <li class="text-other_text"><a>Portfolio</a></li>
+              <li class="text-other_text"><a>Blogs</a></li>
+              <li class="text-other_text"><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end w-full">
+            <div class="hidden lg:flex items-center gap-2">
+              <i
+                class="fa-solid fa-magnifying-glass bg-white rounded-full p-2 border-solid border-rgb(233, 233, 233) border-2 items-center text-[#737373]"
+              ></i>
+              <i
+                class="fa-solid fa-cart-shopping bg-white rounded-full p-2 border-solid border-rgb(233, 233, 233) border-2 items-center text-[#737373]"
+              ></i>
+              <div class="flex">
+                <button
+                  class="btn bg-primary_btn_color rounded-full text-primary_text"
                 >
-                </i>
-              </p>
-            </button>
+                  Book Consult
+                  <p class="bg-black w-fit rounded-full px-2 py-1">
+                    <i
+                      class="fa-solid fa-arrow-right text-center text-white text-xl -rotate-45"
+                    >
+                    </i>
+                  </p>
+                </button>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 text-xl"
+              >
+                <li class="text-secondary_text"><a>Home</a></li>
+                <li class="text-other_text"><a>Services</a></li>
+                <li class="text-other_text"><a>Portfolio</a></li>
+                <li class="text-other_text"><a>Blogs</a></li>
+                <li class="text-other_text"><a>Contact Us</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
+      <!-- Banner starts here -->
     </header>
     <main></main>
     <footer></footer>
