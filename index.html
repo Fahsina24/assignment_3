@@ -42,6 +42,8 @@
               primary_text: "rgb(33, 33, 33)",
               secondary_text: "rgb(73, 73, 73)",
               other_text: "rgb(115, 115, 115)",
+              footerFontColor: "rgb(233, 233, 233)",
+              footMenuColor: "rgb(233, 233, 233)",
             },
             fontFamily: {
               Manrope: "Manrope",
@@ -291,7 +293,7 @@
               </p>
             </div>
           </div>
-          <div class="card bg-[#77AAEA] w-full mb-8 shadow-xl">
+          <div class="card bg-[#77AAEA] w-full mb-8 shadow-xl lg:mb-0">
             <div class="card-body">
               <img class="w-12" src="assets/budget-planning.png" alt="" />
               <h2 class="card-title text-primary_text">Budget Planning</h2>
@@ -361,9 +363,9 @@
               class="rounded-2xl pl-4 pt-5 h-40 placeholder:text-sm lg:col-span-2"
               placeholder="Write your message here"
             ></textarea>
-            <div class="flex justify-between mb-7 lg:col-span-2">
+            <div class="flex justify-center mb-7 lg:col-span-2">
               <button
-                class="btn bg-primary_btn_color w-full rounded-full text-primary_text font-bold"
+                class="btn bg-primary_btn_color w-full rounded-full text-primary_text font-bold lg:w-fit"
               >
                 Send Mail
                 <p class="bg-black w-fit rounded-full px-2 py-1">
@@ -380,16 +382,17 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="footer footer-center bg-black text-white">
-      <div class="flex lg: flex-col mt-14 pb-0">
-        <div class="flex gap-2">
-          <p class="bg-primary_btn_color rounded-full px-2 py-1 items-center">
+    <footer class="footer footer-center bg-black text-footerFontColor">
+      <div class="flex lg: flex-col mt-14">
+        <div class="flex gap-3">
+          <p class="bg-primary_btn_color w-fit rounded-full px-2 py-1">
             <i
-              class="fa-solid fa-arrow-right text-center text-black text-xl -rotate-45"
+              class="fa-solid fa-arrow-right text-center text-black text-2xl -rotate-45"
             >
             </i>
           </p>
-          <h1 class="text-3xl font-extrabold">Rinterio</h1>
+
+          <h1 class="text-4xl font-extrabold">Rinterio</h1>
         </div>
         <div>
           <p
@@ -403,7 +406,7 @@
       </div>
 
       <div
-        class="flex flex-col gap-8 text-sm lg:flex-row lg:justify-evenly lg:w-4/6"
+        class="flex flex-col gap-8 text-sm text-footMenuColor lg:flex-row lg:justify-evenly lg:w-4/6"
       >
         <a>Home</a>
         <a>Services</a>
