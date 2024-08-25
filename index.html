@@ -44,6 +44,7 @@
               other_text: "rgb(115, 115, 115)",
               footerFontColor: "rgb(233, 233, 233)",
               footMenuColor: "rgb(233, 233, 233)",
+              color_portfolio: "rgb(255, 255, 255)",
             },
             fontFamily: {
               Manrope: "Manrope",
@@ -61,58 +62,26 @@
     class="font-Manrope h-auto w-11/12 my-8 mx-auto border-solid border-yellow-500 border-8"
   >
     <!-- header starts here -->
-    <header class="w-11/12 mx-auto">
+    <header class="w-full mx-auto bg-gradient-to-r from-slate-100 to-slate-100">
       <!-- navbar starts here -->
-      <nav class="w-full mb-5">
-        <div class="navbar border-blue-600 border solid border-10">
-          <div class="navbar-start gap-1">
-            <p class="bg-primary_btn_color rounded-full px-2 py-1 items-center">
-              <i
-                class="fa-solid fa-arrow-right text-center text-black text-xl -rotate-45"
+      <section class="w-11/12 mx-auto">
+        <nav class="w-full mb-5">
+          <div class="navbar border-blue-600 border solid border-10">
+            <div class="navbar-start gap-1">
+              <p
+                class="bg-primary_btn_color rounded-full px-2 py-1 items-center"
               >
-              </i>
-            </p>
-            <h1 class="text-3xl text-primary_text font-extrabold">Rinterio</h1>
-          </div>
-          <div class="navbar-center hidden gap-1 lg:flex">
-            <ul class="menu menu-horizontal px-1 text-m">
-              <li class="text-secondary_text"><a>Home</a></li>
-              <li class="text-other_text"><a>Services</a></li>
-              <li class="text-other_text"><a>Portfolio</a></li>
-              <li class="text-other_text"><a>Blogs</a></li>
-              <li class="text-other_text"><a>Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end w-full">
-            <div class="hidden lg:flex items-center gap-1">
-              <i
-                class="fa-solid fa-magnifying-glass bg-white rounded-full p-2 border-solid border-rgb(233, 233, 233) border-2 items-center text-[#737373]"
-              ></i>
-              <i
-                class="fa-solid fa-cart-shopping bg-white rounded-full p-2 border-solid border-rgb(233, 233, 233) border-2 items-center text-[#737373]"
-              ></i>
-              <div class="flex">
-                <button
-                  class="btn bg-primary_btn_color rounded-full text-primary_text"
+                <i
+                  class="fa-solid fa-arrow-right text-center text-black text-xl -rotate-45"
                 >
-                  Book Consult
-                  <p class="bg-black w-fit rounded-full px-2 py-1">
-                    <i
-                      class="fa-solid fa-arrow-right text-center text-white text-xl -rotate-45"
-                    >
-                    </i>
-                  </p>
-                </button>
-              </div>
+                </i>
+              </p>
+              <h1 class="text-3xl text-primary_text font-extrabold">
+                Rinterio
+              </h1>
             </div>
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <i class="fa-solid fa-bars"></i>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 text-xl"
-              >
+            <div class="navbar-center hidden gap-1 lg:flex">
+              <ul class="menu menu-horizontal px-1 text-m">
                 <li class="text-secondary_text"><a>Home</a></li>
                 <li class="text-other_text"><a>Services</a></li>
                 <li class="text-other_text"><a>Portfolio</a></li>
@@ -120,9 +89,49 @@
                 <li class="text-other_text"><a>Contact Us</a></li>
               </ul>
             </div>
+            <div class="navbar-end w-full">
+              <div class="hidden lg:flex items-center gap-1">
+                <i
+                  class="fa-solid fa-magnifying-glass bg-white rounded-full p-2 border-solid border-rgb(233, 233, 233) border-2 items-center text-[#737373]"
+                ></i>
+                <i
+                  class="fa-solid fa-cart-shopping bg-white rounded-full p-2 border-solid border-rgb(233, 233, 233) border-2 items-center text-[#737373]"
+                ></i>
+                <div class="flex">
+                  <button
+                    class="btn bg-primary_btn_color rounded-full text-primary_text"
+                  >
+                    Book Consult
+                    <p class="bg-black w-fit rounded-full px-2 py-1">
+                      <i
+                        class="fa-solid fa-arrow-right text-center text-white text-xl -rotate-45"
+                      >
+                      </i>
+                    </p>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="dropdown bg-white rounded-full border-footMenuColor border solid border-8"
+              >
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 text-4xl"
+                >
+                  <li class="text-secondary_text"><a>Home</a></li>
+                  <li class="text-other_text"><a>Services</a></li>
+                  <li class="text-other_text"><a>Portfolio</a></li>
+                  <li class="text-other_text"><a>Blogs</a></li>
+                  <li class="text-other_text"><a>Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </section>
       <!-- Banner starts here -->
       <div
         class="w-full border-blue-600 border solid border-10 flex items-center justify-center text-center flex-col pt-10"
@@ -136,7 +145,7 @@
           sophistication, featuring weathered wood, sleek metal accents, and
           large windows that flood the space with natural light.
         </p>
-        <div class="m-6 w-full text-2xl">
+        <div class="mt-6 w-full text-2xl lg:my-10">
           <button
             class="btn items-center bg-primary_btn_color_opacity rounded-full text-primary_text border-1 border-primary_btn_color w-full font-extrabold text-xl lg:w-fit"
           >
@@ -153,8 +162,10 @@
     </header>
     <main>
       <!-- About Us Section -->
-      <section class="mt-2 lg:mt-32">
-        <div class="w-11/12 mx-auto">
+      <section class="mt-6 lg:mt-20">
+        <div
+          class="w-11/12 mx-auto border-blue-600 border solid border-10 hidden lg:block"
+        >
           <img
             class="invisible lg:visible lg:-ml-6"
             src="assets/Vector.png"
@@ -162,7 +173,7 @@
           />
         </div>
         <div class="w-full bg-gradient-to-r from-slate-100 to-slate-100">
-          <div class="w-11/12 mx-auto">
+          <div class="w-11/12 mx-auto border-blue-600 border solid border-10">
             <div class="w-full lg:flex">
               <div class="text-center lg:w-1/2 lg:text-left">
                 <button
@@ -233,7 +244,7 @@
 
       <!-- Our Work Process Section -->
       <section
-        class="w-full mx-auto bg-gradient-to-r from-slate-100 to-slate-100 border-blue-600 border solid border-10 pt-4 lg:pt-14"
+        class="w-full mx-auto mb-2 bg-gradient-to-r from-slate-100 to-slate-100 border-blue-600 border solid border-10 pt-4 lg:pt-14"
       >
         <div
           class="w-11/12 mx-auto text-center border-pink-600 border solid border-10"
@@ -306,8 +317,63 @@
         </div>
       </section>
 
-      <!-- Let's  Discuss Next Project-->
-      <section class="w-full mx-auto bg-page_bg">
+      <!-- Our Latest Portfolio Section -->
+      <section class="w-auto bg_color_portfolio">
+         <div class="lg:w-3/4 w-11/12 mx-auto text-center ">
+          <!-- Heading Section -->
+          <div class="mb-6 border-red-500 border solid border-10">
+            <button
+              class="btn border-0 mt-6 bg-primary_btn_color_opacity rounded-full text-primary_text text-xl"
+            >
+              <i
+                class="fa-solid fa-arrow-right text-center text-primary_text text-xl"
+              >
+              </i>
+              Explore our Latest works
+            </button>
+
+            <h1
+              class="primary_text font-extrabold py-4 text-2xl px-2 lg:text-4xl lg:py-10"
+            >
+              Our Latest Portfolio
+            </h1>
+            <p
+              class="secondary_text font-normal text-center text-xs mb-4 lg:text-xl lg:w-4/5 lg:mx-auto"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+          <!-- Image Section -->
+           <div class="grid border-red-500 border solid border-10  grid-cols-1 lg:grid-cols-10">
+           <div class="col-span-7 flex border-blue-500 border-solid border-10 bg-purple-100  rounded-xl px-4 py-10 m-2">
+            <img class="w-1/2 h-60" src="assets/img1.png" alt="">
+            <div class="pl-4 text-start">
+              <h1>Commercial</h1>
+              <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+             <button class="flex gap-3">View Details
+                <p
+                class="bg-primary_btn_color rounded-full px-2 py-1 items-center"
+              >
+                <i
+                  class="fa-solid fa-arrow-right text-center text-black text-xl -rotate-45"
+                >
+                </i>
+              </p>
+            </button>
+            </div>
+           </div>
+           <img class=" justify-center h-60 col-span-3" src="assets/img2.png" alt="">
+           <img src="assets/img3.png" alt="">
+           <img src="assets/img4.png" alt="">
+           <img class="lg:hidden"src="assets/img3.png" alt="">
+           <img src="assets/img5.png" alt="">
+           </div>
+      </section>
+
+      <!-- Let's  Discuss Next Project Section-->
+      <section class="w-auto bg-page_bg mx-2 mb-2">
         <div class="lg:w-3/4 w-11/12 mx-auto text-center">
           <!-- Heading Section -->
           <div>
@@ -383,6 +449,8 @@
 
     <!-- Footer Section -->
     <footer class="footer footer-center bg-black text-footerFontColor">
+      <span class="h-4 bg-gradient-to-r from-slate-100 to-slate-100 w-full">
+      </span>
       <div class="flex lg: flex-col mt-14">
         <div class="flex gap-3">
           <p class="bg-primary_btn_color w-fit rounded-full px-2 py-1">
