@@ -55,17 +55,21 @@
         },
       };
     </script>
+
+    
+
+    
   </head>
   <!-- (need to delete this hight and bg color from body and navbar tag) -->
   <body
-    class="font-Manrope h-auto w-11/12 my-8 mx-auto border-solid border-yellow-500 border-8"
+    class="font-Manrope h-auto w-11/12 mx-auto"
   >
     <!-- header starts here -->
-    <header class="w-full mx-auto bg-gradient-to-r from-slate-100 to-slate-100">
+    <header class="w-full mx-auto bg-gradient-to-r from-slate-50 to-slate-100">
       <!-- navbar starts here -->
       <section class="w-11/12 mx-auto">
         <nav class="w-full mb-5">
-          <div class="navbar border-blue-600 border solid border-10">
+          <div class="navbar">
             <div class="navbar-start gap-1">
               <p
                 class="bg-primary_btn_color rounded-full px-2 py-1 items-center"
@@ -98,12 +102,12 @@
                 ></i>
                 <div class="flex">
                   <button
-                    class="btn bg-primary_btn_color rounded-full text-primary_text"
+                    class="border-0 btn bg-primary_btn_color rounded-full text-primary_text text-xl font-extrabold"
                   >
                     Book Consult
-                    <p class="bg-black w-fit rounded-full px-2 py-1">
+                    <p class="bg-black w-fit rounded-full px-2 py-0">
                       <i
-                        class="fa-solid fa-arrow-right text-center text-white text-xl -rotate-45"
+                        class="fa-solid fa-arrow-right text-center text-white text-lg -rotate-45"
                       >
                       </i>
                     </p>
@@ -111,7 +115,7 @@
                 </div>
               </div>
               <div
-                class="lg:hidden dropdown bg-white rounded-full border-footerFontColor border-solid border-8"
+                class="lg:hidden dropdown bg-white rounded-full border-footerFontColor border-solid border-2"
               >
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <i class="fa-solid fa-bars"></i>
@@ -133,7 +137,7 @@
       </section>
       <!-- Banner starts here -->
       <div
-        class="w-11/12 mx-auto border-blue-600 border solid border-10 flex items-center justify-center text-center flex-col pt-10"
+        class="w-11/12 mx-auto flex items-center justify-center text-center flex-col pt-10"
       >
         <img class="w-11/12 lg:w-1/2" src="assets/banner.png" alt="" />
         <h1 class="primary_text font-extrabold py-10 text-2xl px-2 lg:text-5xl">
@@ -144,7 +148,7 @@
           sophistication, featuring weathered wood, sleek metal accents, and
           large windows that flood the space with natural light.
         </p>
-        <div class="mt-6 w-full text-2xl lg:my-10">
+        <div class="mt-6 w-full text-2xl pb-6 lg:my-10">
           <button
             class="btn items-center bg-primary_btn_color_opacity rounded-full text-primary_text border-1 border-primary_btn_color w-full font-extrabold text-xl lg:w-fit"
           >
@@ -161,9 +165,9 @@
     </header>
     <main>
       <!-- About Us Section -->
-      <section class="mt-6 lg:mt-20">
+      <section class="mt-1 lg:mt-20">
         <div
-          class="w-11/12 mx-auto border-blue-600 border solid border-10 hidden lg:block"
+          class="w-11/12 mx-auto hidden lg:block"
         >
           <img
             class="invisible lg:visible lg:-ml-6"
@@ -171,8 +175,8 @@
             alt=""
           />
         </div>
-        <div class="w-full bg-gradient-to-r from-slate-100 to-slate-100">
-          <div class="w-11/12 mx-auto border-blue-600 border solid border-10">
+        <div class="w-full bg-[#F4F4F4]">
+          <div class="w-11/12 mx-auto">
             <div class="w-full lg:flex">
               <div class="text-center lg:w-1/2 lg:text-left">
                 <button
@@ -185,7 +189,7 @@
                   About Us
                 </button>
                 <h1
-                  class="primary_text font-extrabold py-10 text-2xl px-2 lg:text-4xl"
+                  class="text-primary_text font-extrabold py-10 text-xl px-2 lg:text-4xl"
                 >
                   We design thoughtful, liveable spaces
                 </h1>
@@ -229,9 +233,9 @@
                   </div>
                 </div>
               </div>
-              <div class="w-full mt-10 mb-4 lg:w-1/2 lg:mt-0">
+              <div class="w-full mt-10 lg:w-1/2 lg:mt-0">
                 <img
-                  class="object-cover h-full rounded-2xl"
+                  class="object-cover w-full h-full rounded-2xl"
                   src="assets/Rectangle.png"
                   alt=""
                 />
@@ -243,10 +247,10 @@
 
       <!-- Our Work Process Section -->
       <section
-        class="w-full mx-auto mb-2 bg-gradient-to-r from-slate-100 to-slate-100 pt-4 lg:pt-14"
+        class="w-full mx-auto bg-[#F4F4F4] pt-4 lg:pt-14"
       >
         <div
-          class="w-11/12 mx-auto text-center border-blue-600 border -solid border-10"
+          class="w-11/12 mx-auto text-center"
         >
           <button
             class="btn border-0 mt-6 bg-white rounded-full text-primary_text text-xl"
@@ -271,7 +275,7 @@
           </p>
         </div>
         <div
-          class="grid w-11/12 mx-auto grid-cols-1 gap-8 mt-6 pb-4 lg:pb-14 lg:grid-cols-4 lg:mt-14 lg:gap-3 lg:mb-4 border-blue-600 border - solid border-10"
+          class="grid w-11/12 mx-auto grid-cols-1 gap-8 mt-6 pb-4 lg:pb-14 lg:grid-cols-4 lg:mt-14 lg:gap-3 lg:mb-4"
         >
           <div class="w-full card bg-[#E7C1D3] shadow-xl">
             <div class="card-body">
@@ -317,10 +321,10 @@
       </section>
 
       <!-- Our Latest Portfolio Section -->
-      <section class="w-full bg-color_portfolio">
+      <section class="w-full bg-[#F4F4F4]">
         <div class="w-11/12 mx-auto text-centerlg:w-3/4">
           <!-- Heading Section -->
-          <div class="mb-6 border-red-500 border -solid border-10 text-center">
+          <div class="mb-6 text-center">
             <button
               class="btn border-0 mt-6 bg-primary_btn_color_opacity rounded-full text-primary_text text-xl"
             >
@@ -343,13 +347,13 @@
           </div>
           <!-- Image Section -->
           <div
-            class="grid h-auto border-red-500 border solid border-10 grid-cols-1 lg:grid-cols-10 gap-3"
+            class="grid grid-cols-1 lg:grid-cols-10 gap-y-6 lg:gap-3"
           >
-            <div class="col-span-7 flex border-footerColor border-solid border-2 rounded-xl p-4">
-              <img class="w-auto h-auto object-cover rounded-2xl" src="assets/img1.png" alt="" />
-              <div class="pl-4 text-start">
+            <div class="lg:col-span-7 flex flex-col bg-white border-footerColor border-solid border-2 rounded-xl p-4 lg:flex-row">
+              <img class="w-auto h-auto  lg:rounded-2xl " src="./assets/img1.png" alt="" />
+              <div class="pt-6 lg:pl-4 lg:pt-0 text-start">
                 <h1 class="text-3xl text-primary_text font-extrabold pb-6">Commercial</h1>
-                <p class="text-other_text font-normal text-xs lg:text-xl lg:w-full pb-5">
+                <p class="text-other_text font-normal text-sm lg:text-xl lg:w-full pb-5">
                   The barn house captivates with its blend of rustic charm and
                   modern. The barn house captivates with its blend of rustic
                   charm and modern .
@@ -367,15 +371,15 @@
                 </button>
               </div>
             </div>
-            <div class="h-800 col-span-3 rounded-xl border-footerColor border-solid border-2">
+            <div class=" bg-white h-800 col-span-7 lg:col-span-3 rounded-xl border-footerColor border-solid border-2">
               <img
-                class="w-full h-full p-4"
+                class="w-full h-full p-4 "
                 src="assets/img2.png"
                 alt=""
               />
             </div>
             <div
-              class="h-800 col-span-2 rounded-xl border-footerColor border-solid border-2"
+              class=" bg-white h-800 col-span-7 lg:col-span-2 rounded-xl border-footerColor border-solid border-2"
             >
               <img
                 class="w-full h-full p-4"
@@ -383,11 +387,11 @@
                 alt=""
               />
             </div>
-            <div class="col-span-6 flex rounded-xl p-4 border-footerColor border-solid border-2">
+            <div class="bg-white col-span-7 lg:col-span-6 flex flex-col lg:flex-row rounded-xl p-4 border-footerColor border-solid border-2">
               <img class="w-auto h-auto" src="assets/img4.png" alt="" />
-              <div class="pl-4 text-start">
+              <div class="pt-8 lg:pl-4 lg:pt-0 text-start">
                 <h1 class="text-2xl text-primary_text font-extrabold">Commercial</h1>
-                <p class="text-other_text font-normal text-xs lg:text-xl lg:w-full pb-5">
+                <p class="text-other_text font-normal text-sm lg:text-xl lg:w-full pb-5 pt-4">
                   The barn house captivates with its blend of rustic charm and
                   modern. The barn house captivates with its blend of rustic
                   charm and modern .
@@ -406,7 +410,7 @@
               </div>
             </div>
                 <div
-              class="hidden h-800 rounded-xl border-footerColor border-solid border-2"
+              class=" bg-white block  col-span-7 lg:hidden h-800 rounded-xl border-footerColor border-solid border-2"
             >
               <img
                 class="w-full h-full p-4"
@@ -415,7 +419,7 @@
               />
             </div>
              <div
-              class="border-footerColor border-solid border-2 h-800 p-4 col-span-2 rounded-xl "
+              class=" bg-white border-footerColor border-solid border-2 h-800 p-4 col-span-7 lg:col-span-2 rounded-xl "
             >
               <img
                 class="h-full w-full"
@@ -426,8 +430,124 @@
         </div>
       </section>
 
+     <!-- Recent Sales -->
+      <section>
+      <div class=" w-full mx-auto pb-2 bg-[#F4F4F4] pt-4 lg:pt-14">
+         <div
+          class="w-11/12 mx-auto text-center"
+        >
+          <button
+            class="btn border-0 mt-6 bg-primary_btn_color_opacity rounded-full text-primary_text text-xl"
+          >
+            <i
+              class="fa-solid fa-arrow-right text-center text-primary_text text-xl"
+            >
+            </i>
+           Recent Sales
+          </button>
+
+          <h1
+            class="text-primary_text font-extrabold py-4 text-2xl px-2 lg:text-4xl lg:py-10"
+          >
+            Our Recently Sold Buildings
+          </h1>
+          <p
+            class="text-secondary_text font-normal text-xs lg:text-xl lg:w-4/5 lg:mx-auto"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+
+ <div
+          class="grid w-11/12 mx-auto grid-cols-1 gap-8 mt-6 pb-4 lg:pb-6 lg:grid-cols-3 lg:mt-14 lg:gap-3 lg:mb-4"
+        >
+          <div class="w-full h-full card bg-white shadow-xl border-footerColor border-solid border-2">
+            <div class="card-body">
+              <img class="w-full h-full object-cover rounded-lg" src="assets/sold_apartment1.jpg" alt="" />
+               <p class="text-secondary_text">
+               NEW/SOLD
+              </p>
+              <h2 class="card-title text-primary_text font-extrabold">Modern Apartment</h2>
+              <p class="text-secondary_text">
+               2 Beds | 2 Baths | 1-Car Garage
+              </p>
+               <p class="text-secondary_text">
+                Wheelchair accessible property
+              </p>
+              <div class="w-fit">
+        <button
+          class="rounded-full font-extrabold text-primary_text text-sm gap-2 flex"
+        >
+          View Details
+          <p class="bg-primary_btn_color w-fit rounded-full px-1 py-0">
+            <i
+              class="fa-solid fa-arrow-right text-center text-black text-sm -rotate-45"
+            >
+            </i>
+          </p>
+        </button>
+      </div>
+            </div>
+          </div>
+          <div class="w-full card bg-white shadow-xl border-footerColor border-solid border-2">
+            <div class="card-body">
+              <img class="w-full h-400 object-cover rounded-lg" src="assets/soldHome2.jpg" alt="" />
+               <p class="text-secondary_text">
+               RENOVATED / SOLD
+              </p>
+              <h2 class="card-title font-extrabold text-primary_text pb-2 pt-0">Victorian Family Home</h2>
+              <p class="text-secondary_text">
+              5 Beds | 4 Baths | 4-Car Garage
+              </p>
+                     <div class="w-fit">
+        <button
+          class="rounded-full font-extrabold text-primary_text text-sm gap-2 flex"
+        >
+          View Details
+          <p class="bg-primary_btn_color w-fit rounded-full px-1 py-0">
+            <i
+              class="fa-solid fa-arrow-right text-center text-black text-sm -rotate-45"
+            >
+            </i>
+          </p>
+        </button>
+      </div>
+            </div>
+          </div>
+          <div class="w-full h-full card bg-white shadow-xl border-footerColor border-solid border-2">
+            <div class="card-body">
+              <img class="w-full h-400 object-cover rounded-lg" src="assets/soldHome3.jpg" alt="" />
+               <p class="text-secondary_text">
+               RENOVATED / SOLD
+              </p>
+              <h2 class="card-title text-primary_text font-extrabold">Renovated Farm House</h2>
+              <p class="text-secondary_text">
+                4 Beds | 2 Baths | 2- Car Garage
+              </p>
+               <p class="text-secondary_text">
+                Wheelchair accessible property
+              </p>
+                      <div class="w-fit">
+        <button
+          class="rounded-full font-extrabold text-primary_text text-sm gap-2 flex"
+        >
+          View Details
+          <p class="bg-primary_btn_color w-fit rounded-full px-1 py-0">
+            <i
+              class="fa-solid fa-arrow-right text-center text-black text-sm -rotate-45"
+            >
+            </i>
+          </p>
+        </button>
+      </div>
+            </div>
+          </div>
+      </div>
+      </section>
+
       <!-- Let's  Discuss Next Project Section-->
-      <section class="w-auto bg-page_bg bg-no-repeat bg-cover mx-2 my-2">
+      <section class="w-auto bg-page_bg bg-no-repeat bg-cover m-1 lg:mx-2 lg:my-2">
         <div class="lg:w-3/4 w-11/12 mx-auto text-center">
           <!-- Heading Section -->
           <div>
@@ -485,10 +605,10 @@
             ></textarea>
             <div class="flex justify-center mb-7 lg:col-span-2">
               <button
-                class="btn bg-primary_btn_color w-full rounded-full text-primary_text font-bold lg:w-fit"
+                class="btn border-0 bg-primary_btn_color w-full rounded-full text-primary_text font-extrabold text-lg"
               >
                 Send Mail
-                <p class="bg-black w-fit rounded-full px-2 py-1">
+                <p class="bg-black w-fit rounded-full px-2 py-0">
                   <i
                     class="fa-solid fa-arrow-right text-center text-white text-sm -rotate-45"
                   >
@@ -503,13 +623,13 @@
 
     <!-- Footer Section -->
     <footer class="footer footer-center bg-black text-footerFontColor">
-      <span class="h-4 bg-gradient-to-r from-slate-100 to-slate-100 w-full">
+      <span class="h-4 bg-[#F4F4F4] w-full">
       </span>
       <div class="flex lg: flex-col mt-14">
         <div class="flex gap-3">
-          <p class="bg-primary_btn_color w-fit rounded-full px-2 py-1">
+          <p class="bg-primary_btn_color items-center justify-center w-fit rounded-full px-3 py-1">
             <i
-              class="fa-solid fa-arrow-right text-center text-black text-2xl -rotate-45"
+              class="fa-solid fa-arrow-right text-black text-xl -rotate-45"
             >
             </i>
           </p>
@@ -538,10 +658,10 @@
       </div>
       <div class="flex w-11/12 mx-auto lg:justify-center">
         <button
-          class="btn border-0 mb-14 bg-primary_btn_color rounded-full font-bold text-primary_text w-full lg:w-fit"
+          class="btn border-0 mb-14 bg-primary_btn_color rounded-full font-extrabold text-primary_text text-lg w-full lg:w-fit"
         >
           Book Consult
-          <p class="bg-black w-fit rounded-full px-2 py-1">
+          <p class="bg-black w-fit rounded-full px-2 py-0">
             <i
               class="fa-solid fa-arrow-right text-center text-white text-sm -rotate-45"
             >
